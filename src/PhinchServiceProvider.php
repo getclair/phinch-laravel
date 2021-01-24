@@ -20,10 +20,10 @@ class PhinchServiceProvider extends ServiceProvider
         $this->app->singleton(Finch::class, function ($app) {
             return new Finch(
                 new FinchClient(
-                    config('services.phinch.client_id'),
-                    config('services.phinch.client_secret'),
+                    config('services.finch.client_id'),
+                    config('services.finch.client_secret'),
                     config('phinch.api_version'),
-                    config('services.phinch.redirect_url'),
+                    config('services.finch.redirect_url'),
                 )
             );
         });
