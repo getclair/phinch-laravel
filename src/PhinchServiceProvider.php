@@ -27,6 +27,7 @@ class PhinchServiceProvider extends ServiceProvider
         $this->app->singleton(Connect::class, function ($app) {
             return ConnectFactory::make(
                 config('services.finch'),
+                config('phinch.products'),
                 config('phinch.sandbox')
             );
         });

@@ -2,8 +2,6 @@
 
 namespace Phinch\Phinch;
 
-use Illuminate\Contracts\Container\Container;
-use Illuminate\Http\Request;
 use Illuminate\Support\Facades\URL;
 use Illuminate\Support\Str;
 use Phinch\Connect\Connect;
@@ -13,10 +11,11 @@ class ConnectFactory
 {
     /**
      * @param array $config
+     * @param array $products
      * @param bool $sandbox
      * @return Connect
      */
-    public static function make(array $config, bool $sandbox = false): Connect
+    public static function make(array $config, array $products = [], bool $sandbox = false): Connect
     {
         if (!Str::startsWith($redirect = $config['connect_redirect'], 'http')) {
             $redirect = URL::to($redirect);
@@ -27,6 +26,8 @@ class ConnectFactory
             $config['client_secret'],
             $redirect,
         );
+
+        $connect->products($products);
 
         if ($sandbox) {
             $connect->inSandbox();

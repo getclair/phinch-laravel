@@ -4,6 +4,27 @@ return [
 
     /*
     |--------------------------------------------------------------------------
+    | Products
+    |--------------------------------------------------------------------------
+    |
+    | Here you may specify the products your app needs access to.
+    | All options are found in the Finch documentation:
+    | https://developer.tryfinch.com/docs/reference/ZG9jOjMxOTg1NTI3-permissions
+    |
+    */
+
+    'products' => [
+        'company',
+        'directory',
+        'individual',
+        'employment',
+        'payment',
+        'pay_statement',
+//        'benefits',
+    ],
+
+    /*
+    |--------------------------------------------------------------------------
     | Default API Version
     |--------------------------------------------------------------------------
     |
