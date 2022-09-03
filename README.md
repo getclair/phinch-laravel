@@ -1,6 +1,6 @@
 ## Laravel Phinch
 
-A Laravel package for the Finch API SDK
+A Laravel package for the [Finch API SDK](https://github.com/getclair/phinch)
 
 ### Installation
 
