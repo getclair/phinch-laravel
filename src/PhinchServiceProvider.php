@@ -47,6 +47,6 @@ class PhinchServiceProvider extends ServiceProvider
     {
         $configPath = __DIR__ . '/../config/phinch.php';
 
-        $this->publishes([$configPath => config_path('phinch.php')], 'config');
+        $this->publishes([$configPath => config_path('phinch.php')], 'phinch');
     }
 }
