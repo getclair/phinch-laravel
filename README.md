@@ -21,3 +21,11 @@ In your `config/services.php` file add:
 ```
 
 Add the associated values to your .env file.
+
+### Usage
+
+TBD
+
+### Documentation
+
+See [Finch API docs](https://developer.tryfinch.com/)
