@@ -16,7 +16,7 @@ In your `config/services.php` file add:
 'finch' => [
     'client_id' => env('FINCH_CLIENT_ID'),
     'client_secret' => env('FINCH_CLIENT_SECRET'),
-    'redirect_url' => env('FINCH_REDIRECT_URL'),
+    'connect_redirect' => env('FINCH_CONNECT_REDIRECT_URI'),
 ],
 ```
 
