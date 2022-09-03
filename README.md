@@ -10,6 +10,12 @@ composer require hotmeteor/phinch-laravel
 
 ### Configuration
 
+Publish the Phinch config:
+
+```php
+php artisan vendor:publish --tag=phinch
+```
+
 In your `config/services.php` file add:
 
 ```php
