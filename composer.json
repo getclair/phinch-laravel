@@ -1,5 +1,5 @@
 {
-  "name": "hotmeteor/phinch-laravel",
+  "name": "getclair/phinch-laravel",
   "description": "Laravel package for Finch API SDK",
   "type": "library",
   "license": "MIT",
@@ -12,14 +12,14 @@
   "authors": [
     {
       "name": "Adam Campbell",
-      "email": "adam@hotmeteor.com"
+      "email": "adam@getclair.com"
     }
   ],
   "require": {
-    "php": "^7.4|^8.0",
+    "php": "^8.0",
     "ext-json": "*",
-    "hotmeteor/phinch": "dev-main",
-    "illuminate/support": "^7.0|^8.0"
+    "getclair/phinch": "^0.1.0",
+    "illuminate/support": "^8.0|^9.0"
   },
   "require-dev": {
     "nunomaduro/collision": "^5.1",
@@ -28,12 +28,12 @@
   },
   "autoload": {
     "psr-4": {
-      "Phinch\\": "src"
+      "Phinch\\Phinch\\": "src/"
     }
   },
   "autoload-dev": {
     "psr-4": {
-      "Phinch\\Tests\\": "tests/"
+      "Phinch\\Phinch\\Tests\\": "tests/"
     }
   },
   "scripts": {
@@ -42,10 +42,11 @@
   "extra": {
     "laravel": {
       "providers": [
-        "Phinch\\PhinchServiceProvider"
+        "Phinch\\Phinch\\PhinchServiceProvider"
       ],
       "aliases": {
-        "Phinch": "Phinch\\Facade"
+        "Phinch": "Phinch\\Phinch\\Facades\\Phinch",
+        "Connect": "Phinch\\Phinch\\Facades\\Connect"
       }
     }
   },
