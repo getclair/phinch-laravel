@@ -20,7 +20,8 @@ class PhinchServiceProvider extends ServiceProvider
 
         $this->app->singleton(Phinch::class, function ($app) {
             return new Phinch(
-                new PhinchClient(config('phinch.api_version'))
+                new PhinchClient(config('phinch.api_version')),
+                Paginated::class,
             );
         });
 
