@@ -2,8 +2,8 @@
 
 A Laravel wrapper for the [Finch API SDK](https://github.com/getclair/phinch)
 
-[![Latest Version on Packagist](https://img.shields.io/packagist/vpre/getclair/phinch.svg?style=flat-square)](https://packagist.org/packages/getclair/phinch)
-![PHP from Packagist](https://img.shields.io/packagist/php-v/getclair/phinch)
+[![Latest Version on Packagist](https://img.shields.io/packagist/vpre/getclair/phinch-laravel.svg?style=flat-square)](https://packagist.org/packages/getclair/phinch-laravel)
+![PHP from Packagist](https://img.shields.io/packagist/php-v/getclair/phinch-laravel)
 
 ### Installation
 
