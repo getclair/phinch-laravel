@@ -8,7 +8,7 @@ A Laravel wrapper for the [Finch API SDK](https://github.com/getclair/phinch)
 ### Installation
 
 ```shell
-composer require hotmeteor/phinch-laravel
+composer require getclair/phinch-laravel
 ```
 
 ### Configuration
